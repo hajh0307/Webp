@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week2</title>
+  <style>
+    #week div {
+      background-color: skyblue;
+    }
+    #week div div {
+      margin: 7px;
+      display: inline-block;
+    }
+    #week div div a {
+      color: white;
+      text-decoration: none;
+    }
+    #week a:hover {color: blue;}
+    table {
+      border-collapse: collapse;
+    }
+    td, th {
+      padding: 10px;
+      height: 10px;
+      padding-left: 60px;
+      padding-right: 60px;
+      text-align: center;
+    }
+    thead {
+      background-color: rgba(135, 207, 235, 0.247);
+    }
+    tbody tr:hover {
+      background-color: rgba(255, 255, 0, 0.18);
+    }
+    #box div{
+      display: inline-block;
+      height : 100px;
+      width: 100px;
+      background-color: rgba(255, 174, 0, 0.24);
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web Programming</h1>
+
+  </header>
+  <nav = id="week">
+    <div>
+      <div><a href="#Week 1">Week 1</a></div>
+      <div><a href="#Week 2">Week 2</a></div>
+      <div><a href="#Week 3">Week 3</a></div>
+      <br>
+      <div><a href="#Week 4">Week 4</a></div>
+    </div>
+  </nav>
+  <hr>
+  <section>
+    <b>웹에 관하여<br><br></b>
+    <details>
+      <summary>웹의 기본 목적</summary>
+      <p>웹의 기본 목적은 한 컴퓨터에서 만든 문서를 다른 컴퓨터에서 쉽게 볼 수 있게 하는 것이다.</p>
+    </details>
+    <details>
+    <summary>왜 Why?</summary>
+      <p>전 세계의 컴퓨터들을 인터넷으로 연결한 시스템을 WWW, 즉 웹이라고 부른다.</p>
+    </details><br>
+  
+  </section>
+  <section>
+    <table border="1">
+      <caption><b>Weekly Schedule<br><br></b></caption>
+ 
+      <thead>
+        <tr><th>Week</th><th>Date</th><th>Contents</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Sept.2</td><td><ul><li>강의 개요</li><li>웹의 개념과 구조</li><li>Visual Studio Code</li></ul></td></tr>
+        <tr><td>2</td><td>Sept.9</td><td>HTML Review</td></tr>
+        <tr><td>3</td><td>Sept.16</td><td>CSS Review</td></tr>
+        <tr><td>4</td><td>Sept.23</td><td>JavaScript</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <hr>
+  <ol>
+    <li id="Week 1"><b>Week 1</b></li>
+    <ul>
+      <li><a href="Syllabus.pdf" target="_black">강의 개요</a></li>
+      <li><a href= "웹의개념과구조.pdf" target="_black">웹의 개념과 역사</a></li>
+      <li><a href= "VisualStudioCode.pdf" target="_black">Visual Stdio Code</a></li>
+      <ol>
+        <li>설치</li>
+        <li>유용한 plug-ins</li>
+        <ul>
+          <li>Material Theme</li>
+          <li>Prettier</li>
+          <li>indent-rainbow</li>
+          <li>Auto Rename Tag</li>
+          <li>HTML CSS Support</li>
+          <li>Live Server</li>
+        </ul>
+        <li>EMMET</li>
+      </ol>
+    </ul>
+    <hr>
+    <li id="Week 2"><b>Week 2: <a href="HTML5-Review.pdf" target="_black">HTML Review</a></b></li>
+    <br>
+    <b>Input Types</b>
+    <br>
+    <br>
+    <u>Check box</u>
+    <br>
+    <br>
+    <form>
+      <input type="checkbox" value=""> HTML5 
+      <input type="checkbox" value=""> CSS3 
+      <input type="checkbox" value=""> JavaScript
+    </form>
+    <br>
+    <u>Radio Button</u>
+    <br>
+    <br>
+    <form>
+      <input type="radio" value=""> HTML5 <br>
+      <input type="radio" value=""> CSS3 <br>
+      <input type="radio" value=""> javaScript
+    </form>
+    <br>
+    <u>Combo Box</u>
+    <br>
+    <br>
+    <form>
+      <select>
+        <option value="1">HTML5</option>
+        <option value="1">CSS3</option>
+        <option value="1">JavaScript</option>
+      </select> 
+    </form>
+    <hr>
+    <li id="Week 3"><b>Week 3: <a href="CSS3-Review.pdf" target="_block">CSS Review</a></b></li>
+    <br>
+      <ul>
+        <li>Selectors: *, tag, #id, .class, 가상클래스, attribute</li>
+        <li>Properties: background-color, background, color, border-color, font-size, text-align, text-decoration, font-family, ...</li>
+        <li>Box Model
+          <ul>
+          <li>block 요소, inline 요소</li>
+          <li>margin, pading, border, height, width</li>
+          </ul>
+        </li>
+        <li>display: block, inline, inline-block</li>
+        <li>position: absolute, relative, fixed, float</li>
+      </ul>
+      <br>
+      <div id="box"></div>
+      <hr>
+    <li id="Week 4:"><b>Week 4</b></li>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </ol>
+  <footer>
+    <hr>
+    Copyright ⓒ 2024 by Sung-Dong ALL Right Reserved
+  </footer>
+</body>
+</html>
