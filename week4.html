@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    객체 생성
+  </title>
+  <script>
+    function register() {this.nStudent += 1;}
+    function unregister() {this.nStudent -= 1;}
+    function getStudentCount() {return this.nStudent;}
+
+    var user = new Object();
+    user.korname = "웹프로그래밍";
+    user.engName = "Web Programming";
+    user.classCode = "V024003";
+    user.nStudent = 0;
+    user.register = register;
+    user.unregister = unregister;
+    user.getStudentCount = getStudentCount;    
+  </script>
+  <script>
+    var literal = {
+      korname : "클라우드컴퓨팅",
+      engName : "Cloud Computing",
+      classCode : "V024004",
+      nStudent : 0,
+
+      register: function() { this.nStudent += 1;},
+      unregister: function() { this.nStudent -= 1;},
+      getStudentCount: function() {return this.nStudent;}
+    };
+  </script>
+  <script>
+    function Proto(korname, engName, classCode, nStudent) {
+      this.korname = korname;
+      this.engName = engName;
+      this.classCode = classCode;
+      this.nStudent = 0;
+
+      this.register = function() { this.nStudent += 1;},
+      this.unregister = function() { this.register -= 1;},
+      this.getStudentCount = function() { return this.nStudent;}
+    };
+  </script>
+</head>
+<body>
+  <h1>
+    1. 직접 객체 만들기
+  </h1>
+  <script>
+    document.write("교과목 이름 = ");
+    document.write(user.korname + "<br> ");
+    document.write("등록 학생 수 = ");
+    document.write(user.nStudent + "<br> ");
+    document.write("after register, 등록 학생 수 = ");
+    user.register();
+    document.write(user.getStudentCount() + " ");
+    
+  </script>
+  <hr>
+  <h1>
+    2. 리터럴 표기법
+  </h1>
+  <script>
+    document.write("교과목 이름 = ");
+    document.write(literal.korname + "<br> ");
+    document.write("등록 학생 수 = ");
+    document.write(literal.nStudent + "<br> ");
+    document.write("after register, 등록 학생 수 = ");
+    literal.register();
+    document.write(literal.getStudentCount() + " ");
+  </script>
+  <hr>
+  <h1>
+    3. Prototype
+  </h1>
+  <script>
+    var proto = new Proto("프로그래밍언어론", "Programming Language Theory", "V02305", 0);
+
+    document.write("교과목 이름 = ");
+    document.write(proto.korname + "<br>");
+    document.write("등록 학생 수 = ");
+    document.write(proto.nStudent + "<br>");
+    document.write("after register, 등록 학생 수 = ");
+    proto.register();
+    document.write(proto.getStudentCount() + " ");
+  </script>
+</body>
+</html>
