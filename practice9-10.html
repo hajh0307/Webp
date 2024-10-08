@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 문제 9-10</title>
+  <script>
+    function doCalc(e){
+      let exp = document.getElementById("exp");
+      exp.value = eval(exp.value);
+    }
+    function put(o){
+      let exp = document.getElementById("exp");
+      if (exp.value == 0){
+        exp.value="";
+      }
+      exp.value += o.value;
+    }
+    function clearInput() {
+      let exp = document.getElementById("exp");
+      exp.value =0;
+    }
+    function backInput(){
+      let exp = document.getElementById("exp");
+      exp.value = exp.value.slice(0, -1);
+      if (exp.value == ""){
+        exp.value=0;
+      }
+    }
+  </script>
+  <style>
+    input[type="button"]{
+      width:60px;
+      margin: 4px;;
+    }
+  </style>
+</head>
+<body>
+  <h2>계산기 만들기</h2>
+  <hr>
+  <input type="text" id="exp" value="0" ><br>
+  <input type="button" value="BACK" onclick="backInput()">
+  <input type="button" value="CE"onclick="clearInput()">
+  <input type="button" value="C" onclick="clearInput()">
+  <input type="button" value="=" onclick="doCalc(event)"><br>
+  <input type="button" value="7" onclick="put(this)">
+  <input type="button" value="8" onclick="put(this)">
+  <input type="button" value="9" onclick="put(this)">
+  <input type="button" value="/" onclick="put(this)"><br>
+  <input type="button" value="4" onclick="put(this)">
+  <input type="button" value="5" onclick="put(this)">
+  <input type="button" value="6" onclick="put(this)">
+  <input type="button" value="*" onclick="put(this)"><br>
+  <input type="button" value="1" onclick="put(this)">
+  <input type="button" value="2" onclick="put(this)">
+  <input type="button" value="3" onclick="put(this)">
+  <input type="button" value="-" onclick="put(this)"><br>
+  <input type="button" value="0" onclick="put(this)">
+  <input type="button" value="+" onclick="put(this)">
+  <input type="button" value="NONE">
+  <input type="button" value="NONE">  
+</body>
+</html>
