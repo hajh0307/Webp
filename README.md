@@ -35,27 +35,25 @@
 9. week9
    - 9주차 연습
    - Apache 사용
-
-
-
+   
 10. week10
-   - 10주차 연습
+      - 10주차 연습
 
 11. week11
-   - 11주차 연습
-   - JavaScript Debugger
-   - 백틱
-   - for of, forEach() 
+      - 11주차 연습
+      - JavaScript Debugger
+      - 백틱
+      - for of, forEach() 
 
 12. week12
-   - 12주차 연습
-   - javascript 고급 구문
-   - 함수형 프로그래밍 
+      - 12주차 연습
+      - javascript 고급 구문
+      - 함수형 프로그래밍 
 
 13. week13
-   - 13주차 연습
-   - node.js 
+      - 13주차 연습
+      - node.js 
 
 14. week14
-   - 14주차 연습
-   - express
+      - 14주차 연습
+      - express
