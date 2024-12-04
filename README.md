@@ -40,6 +40,7 @@
    - 10주차 연습
 
 11. week11
+   - 연
    - 11주차 연습
    - JavaScript Debugger
    - 백틱
